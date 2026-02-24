@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: oklch(0.99 0.002 60);
+    --foreground: oklch(0.15 0.02 30);
+
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.15 0.02 30);
+
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.15 0.02 30);
+
+    --primary: oklch(0.52 0.22 27);
+    --primary-foreground: oklch(0.99 0.002 60);
+
+    --secondary: oklch(0.96 0.01 60);
+    --secondary-foreground: oklch(0.25 0.02 30);
+
+    --muted: oklch(0.96 0.005 60);
+    --muted-foreground: oklch(0.55 0.02 30);
+
+    --accent: oklch(0.65 0.18 45);
+    --accent-foreground: oklch(0.99 0.002 60);
+
+    --destructive: oklch(0.55 0.22 25);
+    --destructive-foreground: oklch(0.99 0.002 60);
+
+    --border: oklch(0.90 0.01 60);
+    --input: oklch(0.90 0.01 60);
+    --ring: oklch(0.52 0.22 27);
+
+    --success: oklch(0.60 0.18 145);
+    --warning: oklch(0.75 0.18 75);
+
+    --news-breaking: oklch(0.52 0.22 27);
+    --news-trending: oklch(0.65 0.18 45);
+    --news-cinema: oklch(0.55 0.20 300);
+    --news-viral: oklch(0.58 0.20 200);
+    --news-politics: oklch(0.48 0.18 240);
+    --news-interview: oklch(0.60 0.18 145);
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: oklch(0.12 0.01 30);
+    --foreground: oklch(0.95 0.005 60);
+
+    --card: oklch(0.17 0.015 30);
+    --card-foreground: oklch(0.95 0.005 60);
+
+    --popover: oklch(0.17 0.015 30);
+    --popover-foreground: oklch(0.95 0.005 60);
+
+    --primary: oklch(0.65 0.22 27);
+    --primary-foreground: oklch(0.12 0.01 30);
+
+    --secondary: oklch(0.22 0.02 30);
+    --secondary-foreground: oklch(0.90 0.005 60);
+
+    --muted: oklch(0.22 0.015 30);
+    --muted-foreground: oklch(0.65 0.02 60);
+
+    --accent: oklch(0.70 0.18 45);
+    --accent-foreground: oklch(0.12 0.01 30);
+
+    --destructive: oklch(0.60 0.22 25);
+    --destructive-foreground: oklch(0.99 0.002 60);
+
+    --border: oklch(0.28 0.02 30);
+    --input: oklch(0.28 0.02 30);
+    --ring: oklch(0.65 0.22 27);
+
+    --news-breaking: oklch(0.65 0.22 27);
+    --news-trending: oklch(0.70 0.18 45);
+    --news-cinema: oklch(0.65 0.20 300);
+    --news-viral: oklch(0.65 0.20 200);
+    --news-politics: oklch(0.60 0.18 240);
+    --news-interview: oklch(0.65 0.18 145);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .news-section-heading {
+    @apply text-xl font-bold text-foreground border-l-4 border-primary pl-3 mb-4;
+  }
+
+  .news-card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  .category-badge-cinema {
+    background-color: oklch(0.55 0.20 300 / 0.15);
+    color: oklch(0.45 0.20 300);
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .category-badge-viral {
+    background-color: oklch(0.58 0.20 200 / 0.15);
+    color: oklch(0.45 0.20 200);
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .category-badge-politics {
+    background-color: oklch(0.48 0.18 240 / 0.15);
+    color: oklch(0.38 0.18 240);
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .category-badge-interview {
+    background-color: oklch(0.60 0.18 145 / 0.15);
+    color: oklch(0.45 0.18 145);
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .category-badge-default {
+    background-color: oklch(0.52 0.22 27 / 0.15);
+    color: oklch(0.42 0.22 27);
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .breaking-ticker {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .header-brand {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .header-nav {
+    @apply bg-foreground text-background dark:bg-card dark:text-foreground;
+  }
+}

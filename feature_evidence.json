@@ -1,0 +1,44 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-find-every-occurrence-of-the-hindi-text-across-all-frontend-source-files-header-tsx-footer-tsx-index-html-any-other-component-or-page-that-references-this-string-and-replace-it-with-also-update-the-backend-sample-data-in-main-mo-if-that-string-appears-there",
+      "featureTitle": "Find every occurrence of the Hindi text 'सुमिता भोजपुरी न्यूज़' across all frontend source files (Header.tsx, Footer.tsx, index.html, any other component or page that references this string) and replace it with 'सुमिता भोजपुरी समाचार'. Also update the backend sample data in main.mo if that string appears there.",
+      "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-refine-the-sticky-header-to-look-clean-and-professional-like-a-major-news-portal-ensure-the-logo-brand-area-is-uncluttered-navigation-links-are-evenly-spaced-and-clearly-readable-the-search-bar-is-compact-and-well-aligned-and-there-is-no-visual-noise-or-redundant-elements-the-saffron-red-accent-color-and-dark-light-mode-toggle-must-be-preserved",
+      "featureTitle": "Refine the sticky header to look clean and professional like a major news portal. Ensure the logo/brand area is uncluttered, navigation links are evenly spaced and clearly readable, the search bar is compact and well-aligned, and there is no visual noise or redundant elements. The saffron-red accent color and dark/light mode toggle must be preserved.",
+      "files": [
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

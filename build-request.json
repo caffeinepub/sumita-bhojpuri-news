@@ -1,0 +1,60 @@
+{
+  "kind": "build_request",
+  "title": "Replace brand name 'सुमिता भोजपुरी न्यूज़' with 'सुमिता भोजपुरी समाचार' and clean up header",
+  "projectName": "Sumita Bhojpuri News",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Find every occurrence of the Hindi text 'सुमिता भोजपुरी न्यूज़' across all frontend source files (Header.tsx, Footer.tsx, index.html, any other component or page that references this string) and replace it with 'सुमिता भोजपुरी समाचार'. Also update the backend sample data in main.mo if that string appears there.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Change all Hindi text from \"सुमिता भोजपुरी न्यूज़\" to \"सुमिता भोजपुरी समाचार\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "No instance of 'सुमिता भोजपुरी न्यूज़' remains anywhere in frontend source files or backend sample data.",
+        "All replaced locations now display 'सुमिता भोजपुरी समाचार' correctly.",
+        "The English brand name 'Sumita Bhojpuri News' (used in page title, logo text, and copyright) is left unchanged."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Refine the sticky header to look clean and professional like a major news portal. Ensure the logo/brand area is uncluttered, navigation links are evenly spaced and clearly readable, the search bar is compact and well-aligned, and there is no visual noise or redundant elements. The saffron-red accent color and dark/light mode toggle must be preserved.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Keep header clean and professional like a news website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The header presents a clean, uncluttered layout with clear visual hierarchy between logo, navigation, and search.",
+        "Navigation category links are evenly spaced and fully legible in both light and dark modes.",
+        "The saffron-red (#D0021B) accent color is retained for the category navigation bar.",
+        "The dark/light mode toggle remains present and functional in the header.",
+        "The header is fully responsive on mobile and desktop without overflow or cramped elements."
+      ]
+    }
+  ],
+  "constraints": [
+    "The English brand name 'Sumita Bhojpuri News' must not be changed.",
+    "Do not alter any files listed under frontend.immutablePaths.",
+    "Preserve the existing saffron-red (#D0021B) color theme and dark/light mode functionality."
+  ],
+  "nonGoals": [
+    "Translating any other Hindi/Devanagari content to English.",
+    "Adding new header features (e.g., new nav items, notifications, user avatar).",
+    "Changing backend article data fields or CRUD API signatures."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

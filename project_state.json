@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "A complete Hindi news website named 'Sumita Bhojpuri News' built with React/Next.js, styled like a professional Indian news portal (Aaj Tak/News18 style). Features include homepage with breaking news, category navigation, article pages with dynamic routing, admin panel at /admin, search, trending section, and dark/light mode. All content in Hindi (Devanagari). Data persists via localStorage/JSON. The site logo/brand name 'Sumita Bhojpuri News' is displayed in English text.",
+  "architectural_notes": [
+    "Built with React/Next.js, no paid services",
+    "Data persistence via localStorage or JSON (no external database)",
+    "All UI content in Hindi (Devanagari script), font: Noto Sans Devanagari",
+    "Admin panel accessible at /admin route"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-responsive-homepage-that-uses-noto-sans-devanagari-font-throughout-and-renders-all-text-in-hindi-devanagari-script-the-homepage-must-include-a-a-sticky-header-with-the-logo-text-sumita-bhojpuri-news-in-bold-red-saffron-a-category-navigation-bar-with-links-for-and-a-search-bar-b-a-prominent-breaking-news-featured-article-banner-at-the-top-showing-the-featured-article-s-image-headline-and-short-description-c-a-latest-news-grid-of-news-cards-each-showing-image-hindi-title-short-description-category-badge-and-date-d-a-trending-sidebar-section-showing-top-trending-article-titles-with-rank-numbers-e-a-footer-with-copyright-text-sumita-bhojpuri-news-and-category-links",
+      "title": "Build a responsive homepage that uses Noto Sans Devanagari font throughout and renders all text in Hindi (Devanagari script). The homepage must include: (a) a sticky header with the logo text 'Sumita Bhojpuri News' in bold red/saffron, a category navigation bar with links for भोजपुरी सिनेमा, वायरल खबर, राजनीति, इंटरव्यू, and a search bar; (b) a prominent breaking news / featured article banner at the top showing the featured article's image, headline, and short description; (c) a 'Latest News' grid of news cards each showing image, Hindi title, short description, category badge, and date; (d) a 'Trending' sidebar section showing top trending article titles with rank numbers; (e) a footer with copyright text '© Sumita Bhojpuri News – सर्वाधिकार सुरक्षित' and category links.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-article-detail-page-at-route-article-id-the-page-must-display-the-article-s-full-image-hindi-title-category-badge-publication-date-and-complete-hindi-body-content-below-the-article-show-a-related-news-section-with-up-to-4-articles-from-the-same-category-displayed-as-horizontal-cards",
+      "title": "Implement an article detail page at route /article/:id. The page must display the article's full image, Hindi title, category badge, publication date, and complete Hindi body content. Below the article, show a 'Related News' section with up to 4 articles from the same category displayed as horizontal cards.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-secure-admin-panel-accessible-at-admin-show-a-login-screen-first-with-username-and-password-fields-authenticate-via-the-backend-verifyadmin-function-after-login-display-a-dashboard-with-a-table-of-all-articles-title-category-date-featured-trending-toggles-edit-and-delete-buttons-include-a-form-to-add-a-new-article-or-edit-an-existing-one-with-fields-hindi-title-hindi-description-hindi-full-content-category-dropdown-image-url-input-featured-checkbox-trending-checkbox-and-date-on-save-call-the-appropriate-backend-add-or-update-function-delete-should-call-the-backend-delete-function-with-confirmation-the-admin-panel-must-be-unreachable-without-login-redirect-to-login-if-not-authenticated",
+      "title": "Create a secure admin panel accessible at /admin. Show a login screen first with username and password fields; authenticate via the backend verifyAdmin function. After login, display a dashboard with a table of all articles (title, category, date, featured/trending toggles, edit and delete buttons). Include a form to add a new article or edit an existing one with fields: Hindi title, Hindi description, Hindi full content, category dropdown (भोजपुरी सिनेमा, वायरल खबर, राजनीति, इंटरव्यू), image URL input, featured checkbox, trending checkbox, and date. On save, call the appropriate backend add or update function. Delete should call the backend delete function with confirmation. The admin panel must be unreachable without login (redirect to login if not authenticated).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-dark-light-mode-toggle-button-in-the-header-light-mode-uses-a-white-off-white-background-with-dark-text-dark-mode-uses-a-very-dark-background-111-or-similar-with-light-text-the-toggle-state-should-persist-across-page-navigations-within-the-session",
+      "title": "Implement a dark/light mode toggle button in the header. Light mode uses a white/off-white background with dark text; dark mode uses a very dark background (#111 or similar) with light text. The toggle state should persist across page navigations within the session.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-indian-news-portal-visual-theme-inspired-by-aaj-tak-news18-use-a-saffron-red-d0021b-or-similar-and-white-primary-palette-for-the-header-and-accents-with-a-clean-newspaper-style-multi-column-grid-layout-category-navigation-bar-should-have-a-bold-red-background-with-white-text-breaking-news-ticker-or-banner-should-use-a-bright-accent-card-borders-section-headings-and-category-badges-should-use-the-same-accent-color-typography-should-feel-editorial-large-bold-headlines-smaller-muted-meta-text-the-overall-style-should-feel-authoritative-high-energy-and-professional",
+      "title": "Apply a bold Indian news portal visual theme inspired by Aaj Tak / News18. Use a saffron-red (#D0021B or similar) and white primary palette for the header and accents, with a clean newspaper-style multi-column grid layout. Category navigation bar should have a bold red background with white text. Breaking news ticker or banner should use a bright accent. Card borders, section headings, and category badges should use the same accent color. Typography should feel editorial: large bold headlines, smaller muted meta text. The overall style should feel authoritative, high-energy, and professional.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-category-filter-page-clicking-any-category-name-in-the-navigation-bar-filters-the-news-list-to-show-only-articles-from-that-category-display-the-category-name-as-a-hindi-heading-at-the-top-of-the-filtered-list-an-all-option-should-reset-the-filter",
+      "title": "Implement a category filter page: clicking any category name in the navigation bar filters the news list to show only articles from that category. Display the category name as a Hindi heading at the top of the filtered list. An 'All' / 'सभी खबरें' option should reset the filter.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-hindi-devanagari-user-facing-text-throughout-the-frontend-with-english-equivalents-this-includes-navigation-labels-e-g-bhojpuri-cinema-viral-news-politics-interview-all-news-section-headings-e-g-latest-news-trending-related-news-the-breaking-news-ticker-label-breaking-footer-text-copyright-sumita-bhojpuri-news-all-rights-reserved-category-badge-labels-button-labels-search-login-save-delete-edit-add-etc-form-field-labels-and-placeholders-in-the-admin-panel-and-any-other-static-ui-strings-article-content-titles-descriptions-body-text-stored-in-the-backend-sample-data-should-also-be-translated-to-english-the-brand-name-sumita-bhojpuri-news-must-remain-in-english-as-is",
+      "title": "Replace all Hindi/Devanagari user-facing text throughout the frontend with English equivalents. This includes: navigation labels (e.g., 'भोजपुरी सिनेमा' → 'Bhojpuri Cinema', 'वायरल खबर' → 'Viral News', 'राजनीति' → 'Politics', 'इंटरव्यू' → 'Interview', 'सभी खबरें' → 'All News'); section headings (e.g., 'ताजा खबरें' → 'Latest News', 'ट्रेंडिंग' → 'Trending', 'संबंधित खबरें' → 'Related News'); the breaking news ticker label ('ब्रेकिंग' → 'Breaking'); footer text (copyright → '© Sumita Bhojpuri News – All Rights Reserved'); category badge labels; button labels (search, login, save, delete, edit, add, etc.); form field labels and placeholders in the admin panel; and any other static UI strings. Article content (titles, descriptions, body text) stored in the backend sample data should also be translated to English. The brand name 'Sumita Bhojpuri News' must remain in English as-is.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-find-every-occurrence-of-the-hindi-text-across-all-frontend-source-files-header-tsx-footer-tsx-index-html-any-other-component-or-page-that-references-this-string-and-replace-it-with-also-update-the-backend-sample-data-in-main-mo-if-that-string-appears-there",
+      "title": "Find every occurrence of the Hindi text 'सुमिता भोजपुरी न्यूज़' across all frontend source files (Header.tsx, Footer.tsx, index.html, any other component or page that references this string) and replace it with 'सुमिता भोजपुरी समाचार'. Also update the backend sample data in main.mo if that string appears there.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-refine-the-sticky-header-to-look-clean-and-professional-like-a-major-news-portal-ensure-the-logo-brand-area-is-uncluttered-navigation-links-are-evenly-spaced-and-clearly-readable-the-search-bar-is-compact-and-well-aligned-and-there-is-no-visual-noise-or-redundant-elements-the-saffron-red-accent-color-and-dark-light-mode-toggle-must-be-preserved",
+      "title": "Refine the sticky header to look clean and professional like a major news portal. Ensure the logo/brand area is uncluttered, navigation links are evenly spaced and clearly readable, the search bar is compact and well-aligned, and there is no visual noise or redundant elements. The saffron-red accent color and dark/light mode toggle must be preserved.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with latest news, breaking news section, category nav (भोजपुरी सिनेमा, वायरल खबर, राजनीति, इंटरव्यू), news cards with image/title/description/date",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Article page with dynamic routing (/article/[id]), full content with image, related news section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Secure admin panel at /admin with login, add/edit/delete news, image upload, category selection, data saved to localStorage/JSON",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Search bar and trending section on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Dark/light mode toggle",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Mobile-friendly responsive design with Noto Sans Devanagari font, header with logo, footer with copyright",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Set up a Motoko backend actor that stores news articles with fields: id (Nat), title (Text), description (Text), content (Text), category (Text), imageUrl (Text), date (Text), isFeatured (Bool), isTrending (Bool). Expose CRUD functions: addArticle, updateArticle, deleteArticle, getArticles, getArticleById, getArticlesByCategory. Pre-populate with at least 8 sample Hindi articles across the four categories (भोजपुरी सिनेमा, वायरल खबर, राजनीति, इंटरव्यू). Also store admin credentials (hardcoded username/password) and expose a verifyAdmin function.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Change the 'Sumita Bhojpuri News' logo/brand name text to English (instead of Hindi/Devanagari script)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Replace all occurrences of 'सुमिता भोजपुरी न्यूज़' with 'सुमिता भोजपुरी समाचार' throughout the site, and keep the header clean and professional like a news website.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Sumita Bhojpuri News",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

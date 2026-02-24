@@ -1,0 +1,51 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace brand name 'सुमिता भोजपुरी न्यूज़' with 'सुमिता भोजपुरी समाचार' and clean up header",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Replace all occurrences of 'सुमिता भोजपुरी न्यूज़' with 'सुमिता भोजपुरी समाचार' across frontend source files",
+      "acceptanceCriteria": [
+        "No instance of 'सुमिता भोजपुरी न्यूज़' remains anywhere in frontend source files or backend sample data.",
+        "All replaced locations now display 'सुमिता भोजपुरी समाचार' correctly.",
+        "The English brand name 'Sumita Bhojpuri News' (used in page title, logo text, and copyright) is left unchanged."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Search for and replace all instances of the Hindi text 'सुमिता भोजपुरी न्यूज़' with 'सुमिता भोजपुरी समाचार' in the Header component, including logo area and any text references. Preserve all English text like 'Sumita Bhojpuri News'."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Search for and replace all instances of the Hindi text 'सुमिता भोजपुरी न्यूज़' with 'सुमिता भोजपुरी समाचार' in the Footer component, including brand logo area and copyright section. Preserve all English text like 'Sumita Bhojpuri News'."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Refine the sticky header to look clean and professional like a major news portal with uncluttered layout, evenly spaced navigation, and compact search bar",
+      "acceptanceCriteria": [
+        "The header presents a clean, uncluttered layout with clear visual hierarchy between logo, navigation, and search.",
+        "Navigation category links are evenly spaced and fully legible in both light and dark modes.",
+        "The saffron-red (#D0021B) accent color is retained for the category navigation bar.",
+        "The dark/light mode toggle remains present and functional in the header.",
+        "The header is fully responsive on mobile and desktop without overflow or cramped elements."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Refactor the Header component layout for a cleaner, professional news portal appearance. Improve spacing and alignment between logo/brand area, navigation links, and search bar. Ensure navigation category links have consistent spacing and are fully legible. Make the search bar more compact and well-aligned. Remove any visual clutter or redundant elements while preserving the saffron-red (#D0021B) accent color for the category navigation bar and the dark/light mode toggle functionality. Ensure responsive behavior on mobile and desktop."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Review and refine header-related CSS classes and custom properties to support the cleaner header design. Adjust spacing, padding, and layout utilities as needed to achieve professional news portal aesthetics. Ensure styles work correctly in both light and dark modes while maintaining the saffron-red accent color."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system using Inter as the primary font; all component class names and design tokens remain the same but Devanagari font references are removed.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter and Merriweather as the font families replacing Noto Sans Devanagari, with all brand color tokens intact.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations — article CRUD (getArticles, getArticleById, getArticlesByCategory, addArticle, updateArticle, deleteArticle, init), admin checks (isCallerAdmin), and user profile management.",
+  "frontend/src/hooks/useTheme.ts": "Custom hook managing dark/light theme state with localStorage persistence, applying the `dark` class to the document root on toggle.",
+  "frontend/src/hooks/useCategoryFilter.ts": "Category filter hook with all four category constants updated to English: Bhojpuri Cinema, Viral News, Politics, Interview.",
+  "frontend/src/lib/utils.ts": "Utility functions with `getPlaceholderImage` updated to accept `bigint | number`, date formatting using en-US locale, and English category badge class lookup.",
+  "frontend/src/components/CategoryBadge.tsx": "Small reusable badge component rendering a color-coded category label using the updated English category names.",
+  "frontend/src/components/Header.tsx": "Sticky news portal header with brand bar showing logo, Hindi name \"सुमिता भोजपुरी समाचार\", compact search, and theme toggle; plus a category nav bar — placeholder classes updated to Tailwind v3 syntax (`placeholder:text-*`).",
+  "frontend/src/components/BreakingNewsTicker.tsx": "Animated breaking news ticker with the label updated from Hindi 'ब्रेकिंग' to English 'Breaking'.",
+  "frontend/src/components/FeaturedBanner.tsx": "Full-width hero banner with the \"Featured\" label in English and `getPlaceholderImage` called with `bigint`-compatible signature.",
+  "frontend/src/components/NewsCard.tsx": "Reusable news card with \"🔥 Trending\" label in English and `getPlaceholderImage` calls compatible with `bigint` article IDs.",
+  "frontend/src/components/TrendingSidebar.tsx": "Trending sidebar with heading updated from Hindi 'ट्रेंडिंग' to English 'Trending'.",
+  "frontend/src/components/RelatedNews.tsx": "Related news section with heading updated from Hindi 'संबंधित खबरें' to English 'Related News'.",
+  "frontend/src/components/Footer.tsx": "Site footer with brand logo, Hindi name \"सुमिता भोजपुरी समाचार\", category links, quick links, copyright line for \"Sumita Bhojpuri News\", and caffeine.ai attribution — heading classes fixed to use only `text-xs` (removing conflicting `text-base`).",
+  "frontend/src/components/ArticleForm.tsx": "Admin article form with all labels, placeholders, and button text in English (Title, Description, Content, Category, Featured, Trending, Add Article, Update Article, Cancel).",
+  "frontend/src/pages/Home.tsx": "Homepage with section headings updated to English (Latest News, Trending) and all static UI text in English.",
+  "frontend/src/pages/ArticleDetail.tsx": "Article detail page with all static labels in English (Back to Home, date formatting using en-US locale).",
+  "frontend/src/pages/AdminLogin.tsx": "Admin login page with the login error check fixed from `'error'` to the correct `'loginError'` status value.",
+  "frontend/src/pages/AdminDashboard.tsx": "Admin dashboard with all table headers, button labels, status badges, confirmation dialogs, and action labels fully in English.",
+  "frontend/src/App.tsx": "Root application component setting up TanStack Router with routes for /, /article/$id, /admin, /admin/login, and wrapping with ThemeProvider.",
+  "frontend/index.html": "HTML entry point with English lang attribute and Inter/Merriweather Google Fonts instead of Noto Sans Devanagari."
+}
